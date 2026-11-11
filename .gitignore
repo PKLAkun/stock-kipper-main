@@ -1,0 +1,33 @@
+# ===== Dependensi =====
+/node_modules
+
+# ===== Build Next.js =====
+/.next/
+/out/
+next-env.d.ts
+
+# ===== File hasil uji coba =====
+*.tsbuildinfo
+
+# ===== Env / secret =====
+# SEMUA file env berisi secret TIDAK boleh masuk git.
+# Hanya .env.example yang di-commit sebagai contoh.
+.env
+.env.local
+!.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ===== Database =====
+# file sqlite lokal (berisi data asli)
+/data/*
+!/data/.gitkeep
+/.local-db
+
+# ===== Sistem =====
+.DS_Store
+*.log
+
+/docs
